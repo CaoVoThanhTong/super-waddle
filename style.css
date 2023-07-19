@@ -1,0 +1,119 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.product-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #ddd;
+    padding: 12px;
+}
+
+.produc-item{
+    border: solid;
+    width: 19%;
+    background-color: #fff;
+    padding: 12px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.produc-item:hover{
+    transform: scale(1.05);
+    /* transform: scaleY(1.05); */
+}
+h1{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.produc-item img{
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.produc-item button{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: 500;
+    text-shadow: none;
+    background: #ddd;
+    box-shadow: transparent;
+    border: 1px solid #ab0b0b80;
+    transition: 0.5s ease;
+    user-select: none;
+}
+
+.produc-item button:hover{
+    color: #fff;
+    background-color: rgb(159, 73, 4);
+}
+
+.cart{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.cart h2{
+
+}
+.cart table{
+    width: 100%;
+}
+
+.cart table thead tr th:first-child{
+    text-align: left;
+}
+
+.cart table tr td{
+    border-bottom: 1px solid #ddd;
+    padding: 12px 0;
+}
+
+.delete-cart:hover{
+    color: rgb(255, 0, 0);
+}
+
+.cart{
+    position: fixed;
+    height: 100vh;
+    width: 350px;
+    top: 0;
+    right: 0;
+    background-color: rgb(244, 143, 143);
+    padding: 12px 20px;
+    overflow-y: scroll;
+    right: -100%;
+    transition: 0.3s all ease;
+}
+
+.cart_icon i{
+    color: #f40909;
+    margin-left: 45px;
+    cursor: pointer;
+}
+
+.cart i{
+    margin-left: -300px;
+    cursor: pointer;
+}
+
+
+.cart_icon i:hover,
+.cart i:hover{
+    padding: 5px;
+    color: #fff;
+    background-color: #f40909;
+}
